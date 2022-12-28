@@ -46,14 +46,20 @@ body {
 	font-family: "Inter", sans-serif;
 }
 
-/* Cards */
+.main_container {
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	margin: 0 auto;
+}
+
+/* Cards Section */
 
 .card {
 	background: var(--clr-Light-grayish-blue);
 	padding: 2rem 1rem;
 	margin: 1rem auto;
 	border-radius: 5px;
-	width: 85%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -139,3 +145,59 @@ span {
 .youtube {
 	border-top: 4px solid var(--clr-youTube);
 }
+
+/* Overview Section */
+
+.overview_section {
+	color: var(--clr-Dark-grayish-blue);
+	margin-top: 3.5rem;
+}
+
+.overview_title {
+	margin-bottom: 2.5rem;
+}
+
+.overview_card {
+	background: var(--clr-Light-grayish-blue);
+	border-radius: 5px;
+	padding: 2.4rem 2.5rem 1.5rem;
+	margin: 1rem auto;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.overview_top-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.overview_bottom-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.social_appearance {
+	font-size: 1.2rem;
+}
+
+.overview_top-row img {
+	width: 1.7rem;
+}
+
+.social_number {
+	color: var(--clr-vDark-blue);
+	font-size: 2.7rem;
+}
+
+.social_stat {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: .4rem;
+	font-size: 1rem;
+	margin-bottom: .3rem;
+}
+
