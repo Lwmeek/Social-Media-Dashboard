@@ -89,6 +89,12 @@ hr {
 	background: var(--clr-LT-toggle);
 	border-radius: 50px;
 	cursor: pointer;
+	transition: all .3s;
+}
+
+.toggle.backward {
+	background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+	transition: all .3s;
 }
 
 .circle {
@@ -96,17 +102,36 @@ hr {
 	width: 15px;
 	height: 15px;
 	top: 50%;
-	left: 5%;
+	left: 63%;
 	transform: translateY(-50%);
 	background: var(--clr-white);
 	border-radius: 50%;
+	transition: all .3s;
 }
 
-.toggle:hover .circle {
-	animation: move .3s linear forwards;
+.toggle.backward .circle {
+	background: var(--clr-vDark-blue);
+	animation: backward .3s linear forwards;
+	transition: all .3s;
 }
 
-@keyframes move {
+@keyframes backward {
+	0% {
+		left: 63%;
+	}
+	50% {
+		left: 30%;
+	}
+	100% {
+		left: 5%;
+	}
+}
+
+.toggle.forward .circle {
+	animation: forward .3s linear forwards;
+}
+
+@keyframes forward {
 	0% {
 		left: 5%;
 	}
