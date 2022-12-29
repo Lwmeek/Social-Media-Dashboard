@@ -46,6 +46,16 @@ body {
 	font-family: "Inter", sans-serif;
 }
 
+.bg {
+	background: var(--clr-vPale-blue);
+	width: 100%;
+	height: 23%;
+	position: absolute;
+	z-index: -5;
+	border-bottom-left-radius: 7%;
+	border-bottom-right-radius: 7%;
+}
+
 .main_container {
 	display: flex;
 	flex-direction: column;
@@ -63,7 +73,7 @@ body {
 .header h1 {
 	color: var(--clr-vDark-blue);
 	font-size: 2.3rem;
-	margin-bottom: .6rem;
+	margin-bottom: 0.6rem;
 }
 
 hr {
@@ -89,12 +99,12 @@ hr {
 	background: var(--clr-LT-toggle);
 	border-radius: 50px;
 	cursor: pointer;
-	transition: all .3s;
+	transition: all 0.3s;
 }
 
 .toggle.backward {
 	background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-	transition: all .3s;
+	transition: all 0.3s;
 }
 
 .circle {
@@ -106,13 +116,13 @@ hr {
 	transform: translateY(-50%);
 	background: var(--clr-white);
 	border-radius: 50%;
-	transition: all .3s;
+	transition: all 0.3s;
 }
 
 .toggle.backward .circle {
 	background: var(--clr-vDark-blue);
-	animation: backward .3s linear forwards;
-	transition: all .3s;
+	animation: backward 0.3s linear forwards;
+	transition: all 0.3s;
 }
 
 @keyframes backward {
@@ -128,7 +138,7 @@ hr {
 }
 
 .toggle.forward .circle {
-	animation: forward .3s linear forwards;
+	animation: forward 0.3s linear forwards;
 }
 
 @keyframes forward {
@@ -287,8 +297,7 @@ span {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: .4rem;
+	gap: 0.4rem;
 	font-size: 1rem;
-	margin-bottom: .3rem;
+	margin-bottom: 0.3rem;
 }
-
