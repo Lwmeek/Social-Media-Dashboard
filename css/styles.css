@@ -53,6 +53,71 @@ body {
 	margin: 0 auto;
 }
 
+/* Header */
+
+.header {
+	color: var(--clr-Dark-grayish-blue);
+	font-weight: bold;
+}
+
+.header h1 {
+	color: var(--clr-vDark-blue);
+	font-size: 2.3rem;
+	margin-bottom: .6rem;
+}
+
+hr {
+	margin: 2rem 0 1.7rem;
+	border-bottom: 0px;
+}
+
+/* Theme Switch */
+
+.theme_switch {
+	color: var(--clr-Dark-grayish-blue);
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 3rem;
+}
+
+.toggle {
+	position: relative;
+	width: 50px;
+	height: 20px;
+	background: var(--clr-LT-toggle);
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+.circle {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 50%;
+	left: 5%;
+	transform: translateY(-50%);
+	background: var(--clr-white);
+	border-radius: 50%;
+}
+
+.toggle:hover .circle {
+	animation: move .3s linear forwards;
+}
+
+@keyframes move {
+	0% {
+		left: 5%;
+	}
+	50% {
+		left: 30%;
+	}
+	100% {
+		left: 63%;
+	}
+}
+
 /* Cards Section */
 
 .card {
@@ -151,6 +216,7 @@ span {
 .overview_section {
 	color: var(--clr-Dark-grayish-blue);
 	margin-top: 3.5rem;
+	margin-bottom: 4rem;
 }
 
 .overview_title {
