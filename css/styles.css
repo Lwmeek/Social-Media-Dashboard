@@ -252,6 +252,7 @@ span {
 			padding-box,
 		linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
 	border-top: 4px solid transparent;
+	transition: all .3s;
 }
 
 .instagram:hover {
@@ -332,10 +333,60 @@ span {
 
 /* Black Theme */
 
-body.black_theme {
+body.dark_theme {
 	background: var(--clr-vDark-blue);
 }
 
-body.black_theme .bg {
+body.dark_theme .bg {
 	background: var(--clr-vDark-blue_two);
+}
+
+.main_container.dark_theme .header {
+	color: var(--clr-desaturated-blue);
+}
+
+.main_container.dark_theme .header h1 {
+	color: white;
+}
+
+.main_container.dark_theme .theme_switch {
+	color: var(--clr-desaturated-blue);
+}
+
+.main_container.dark_theme .card {
+	background: var(--clr-dark-desaturated-blue);
+}
+
+.main_container.dark_theme .user, .main_container.dark_theme .followers {
+	color: var(--clr-desaturated-blue);
+}
+
+.main_container.dark_theme .number {
+	color: white;
+}
+
+.main_container.dark_theme .instagram {
+	background: linear-gradient(
+		var(--clr-dark-desaturated-blue),
+		var(--clr-dark-desaturated-blue)
+			)
+			padding-box,
+		linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
+	border-top: 4px solid transparent;
+}
+
+.main_container.dark_theme .overview_section{
+	color: var(--clr-desaturated-blue);
+}
+
+.main_container.dark_theme .overview_title {
+	color: white;
+}
+
+.main_container.dark_theme .overview_card {
+	background: var(--clr-dark-desaturated-blue);
+}
+
+.main_container.dark_theme .social_number {
+	color: white;
 }
