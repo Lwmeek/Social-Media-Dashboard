@@ -101,7 +101,7 @@ hr {
 	background: var(--clr-LT-toggle);
 	border-radius: 50px;
 	cursor: pointer;
-	transition: all .3s;
+	transition: all 0.3s;
 }
 
 .toggle:hover {
@@ -171,7 +171,7 @@ hr {
 	justify-content: center;
 	align-items: center;
 	gap: 1.8rem;
-	transition: all .3s;
+	transition: all 0.3s;
 }
 
 .card:hover {
@@ -252,14 +252,11 @@ span {
 			padding-box,
 		linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
 	border-top: 4px solid transparent;
-	transition: all .3s;
+	transition: all 0.3s;
 }
 
 .instagram:hover {
-	background: linear-gradient(
-		hsl(228, 50%, 92%),
-		hsl(228, 50%, 92%)
-			)
+	background: linear-gradient(hsl(228, 50%, 92%), hsl(228, 50%, 92%))
 			padding-box,
 		linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
 	border-top: 4px solid transparent;
@@ -290,7 +287,7 @@ span {
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
-	transition: all .3s;
+	transition: all 0.3s;
 }
 
 .overview_card:hover {
@@ -357,7 +354,8 @@ body.dark_theme .bg {
 	background: var(--clr-dark-desaturated-blue);
 }
 
-.main_container.dark_theme .user, .main_container.dark_theme .followers {
+.main_container.dark_theme .user,
+.main_container.dark_theme .followers {
 	color: var(--clr-desaturated-blue);
 }
 
@@ -367,15 +365,15 @@ body.dark_theme .bg {
 
 .main_container.dark_theme .instagram {
 	background: linear-gradient(
-		var(--clr-dark-desaturated-blue),
-		var(--clr-dark-desaturated-blue)
+				var(--clr-dark-desaturated-blue),
+				var(--clr-dark-desaturated-blue)
 			)
 			padding-box,
 		linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
 	border-top: 4px solid transparent;
 }
 
-.main_container.dark_theme .overview_section{
+.main_container.dark_theme .overview_section {
 	color: var(--clr-desaturated-blue);
 }
 
