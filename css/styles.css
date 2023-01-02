@@ -17,7 +17,7 @@
 	--clr-DT-toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
 	--clr-vDark-blue: hsl(230, 17%, 14%); /*BG, light theme text*/
 	--clr-vDark-blue_two: hsl(232, 19%, 15%); /*Top BG Pattern*/
-	--clr-dark-desaturated-blue: hsl(228, 28%, 20%); /*Card BG*/
+	--clr-dark-desaturated-blue: hsl(229, 27%, 20%); /*Card BG*/
 	--clr-desaturated-blue: hsl(228, 34%, 66%); /*Text*/
 
 	/* Light theme */
@@ -352,6 +352,11 @@ body.dark_theme .bg {
 
 .main_container.dark_theme .card {
 	background: var(--clr-dark-desaturated-blue);
+	transition: all 0.3s ease-in-out;
+}
+
+.main_container.dark_theme .card:hover {
+	background: hsl(229, 27%, 30%);
 }
 
 .main_container.dark_theme .user,
@@ -371,6 +376,14 @@ body.dark_theme .bg {
 			padding-box,
 		linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
 	border-top: 4px solid transparent;
+	transition: all 0.3s ease-in-out;
+}
+
+.main_container.dark_theme .instagram:hover {
+	background: linear-gradient(hsl(229, 27%, 30%), hsl(229, 27%, 30%))
+			padding-box,
+		linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
+	border-top: 4px solid transparent;
 }
 
 .main_container.dark_theme .overview_section {
@@ -383,6 +396,11 @@ body.dark_theme .bg {
 
 .main_container.dark_theme .overview_card {
 	background: var(--clr-dark-desaturated-blue);
+	transition: all 0.3s ease-in-out;
+}
+
+.main_container.dark_theme .overview_card:hover {
+	background: hsl(229, 27%, 30%);
 }
 
 .main_container.dark_theme .social_number {
