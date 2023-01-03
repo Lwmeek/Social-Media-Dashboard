@@ -422,7 +422,7 @@ body.dark_theme .bg {
 	.main_container {
 		width: 90%;
 		margin: 7rem auto 0;
-		max-width: none;
+		max-width: 1240px;
 	}
 
 	hr {
@@ -465,5 +465,70 @@ body.dark_theme .bg {
 	.overview_card {
 		width: 100%;
 		max-width: none;
+	}
+}
+
+@media screen and (min-width: 1260px) {
+	.bg {
+		height: 30%;
+	}
+
+	.header_content {
+		font-size: 1.7rem;
+	}
+
+	.header h1 {
+		font-size: 3rem;
+	}
+
+	.overall_stats {
+		gap: 1rem;
+		max-width: 1250px;
+	}
+
+	.card {
+		padding: 3.5rem 7rem;
+		margin-top: 6rem;
+		max-width: none;
+	}
+
+	.user {
+		font-size: 1.5rem;
+	}
+
+	.number {
+		font-size: 6rem;
+	}
+
+	.followers {
+		font-size: 1.7rem;
+	}
+
+	.today_stat {
+		font-size: 1.5rem;
+	}
+
+	.overview_section {
+		max-width: 1240px;
+	}
+
+	.overview_title {
+		font-size: 2.3rem;
+	}
+
+	.overview_stats {
+		gap: 1rem 2rem;
+	}
+
+	.social_appearance {
+		font-size: 1.5rem;
+	}
+
+	.social_number {
+		font-size: 3.3rem;
+	}
+
+	.social_stat {
+		font-size: 1.5rem;
 	}
 }
