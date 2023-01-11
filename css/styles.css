@@ -178,6 +178,8 @@ hr {
 	align-items: center;
 	gap: 1.8rem;
 	transition: all 0.3s;
+	position: relative;
+	overflow: hidden;
 }
 
 .card:hover {
@@ -242,34 +244,44 @@ span {
 	text-transform: lowercase;
 }
 
-.facebook {
-	border-top: 4px solid var(--clr-facebook);
+.facebook::before {
+	content: "";
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 4px;
+	background: var(--clr-facebook);
 }
 
-.twitter {
-	border-top: 4px solid var(--clr-twitter);
+.twitter::before {
+	content: "";
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 4px;
+	background: var(--clr-twitter);
 }
 
-.instagram {
-	background: linear-gradient(
-				var(--clr-Light-grayish-blue),
-				var(--clr-Light-grayish-blue)
-			)
-			padding-box,
-		linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
-	border-top: 4px solid transparent;
-	transition: all 0.3s;
+.instagram::before {
+	content: "";
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 4px;
+	background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
 }
 
-.instagram:hover {
-	background: linear-gradient(hsl(228, 50%, 92%), hsl(228, 50%, 92%))
-			padding-box,
-		linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
-	border-top: 4px solid transparent;
-}
-
-.youtube {
-	border-top: 4px solid var(--clr-youTube);
+.youtube::before {
+	content: "";
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 4px;
+	background: var(--clr-youTube);
 }
 
 /* Overview Section */
@@ -375,24 +387,6 @@ body.dark_theme .bg {
 
 .main_container.dark_theme .number {
 	color: white;
-}
-
-.main_container.dark_theme .instagram {
-	background: linear-gradient(
-				var(--clr-dark-desaturated-blue),
-				var(--clr-dark-desaturated-blue)
-			)
-			padding-box,
-		linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
-	border-top: 4px solid transparent;
-	transition: all 0.3s ease-in-out;
-}
-
-.main_container.dark_theme .instagram:hover {
-	background: linear-gradient(hsl(229, 27%, 30%), hsl(229, 27%, 30%))
-			padding-box,
-		linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
-	border-top: 4px solid transparent;
 }
 
 .main_container.dark_theme .overview_section {
